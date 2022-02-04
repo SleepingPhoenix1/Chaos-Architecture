@@ -21,8 +21,8 @@ func _process(delta):
 	
 	if !is_on_ground:
 		linear_velocity.y += get_gravity() * delta
-	if Input.is_action_just_pressed("jump") and is_on_ground:
-		jump()
+	#if Input.is_action_just_pressed("jump") and is_on_ground:
+	#	jump()
 
 func _physics_process(delta):
 	move()
